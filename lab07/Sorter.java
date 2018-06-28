@@ -1,11 +1,8 @@
 public class Sorter {
 
-    /**
-     * Bubble-sorts the given values. Insert item k into its correct position.
-     * Maintains the following invariant.
-     *
-     *     values[0] <= values[1] <= ... <= values[k-1]
-     */
+    /* Uses insertion sort to sort the elements of VALUES by inserting item k
+       into its correct position. Maintains the following invariant:
+       values[0] <= values[1] <= ... <= values[k-1] */
     public static void sort(double[] values) {
         for (int k = 1; k < values.length; k += 1) {
             double temp = values[k];
