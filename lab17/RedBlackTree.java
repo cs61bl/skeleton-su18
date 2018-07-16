@@ -43,7 +43,9 @@ public class RedBlackTree<T extends Comparable<T>> {
         return null;
     }
 
-    void insert(RBTreeNode<T> node) {
+    /* Insert ITEM into the red black tree, rotating
+       it accordingly afterwards. */
+    void insert(T item) {
         // TODO: YOUR CODE HERE
     }
 
