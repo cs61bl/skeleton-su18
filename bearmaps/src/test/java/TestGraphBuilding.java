@@ -119,8 +119,8 @@ public class TestGraphBuilding {
     public void testClosest() {
         double lon = -122.2892;
         double lat = 37.8885;
-        assertEquals("Make sure you're using the great circle distance especially if your "
-                + "actual value is 1790732915", 53042711L, graph.closest(lon, lat));
+        assertEquals("If your actual value is 1790732915, make sure you are using the correct "
+                + "distance metrics.", 53042711L, graph.closest(lon, lat));
     }
 
     @Test

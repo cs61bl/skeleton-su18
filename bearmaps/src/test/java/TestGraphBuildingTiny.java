@@ -76,6 +76,7 @@ public class TestGraphBuildingTiny {
     public void testClosest() {
         double lon = -122.25;
         double lat = 37.87;
-        assertEquals(55L, graphTiny.closest(lon, lat));
+        assertEquals("If your actual value is 46, make sure you are using the correct distance "
+                + "metrics.", 55L, graphTiny.closest(lon, lat));
     }
 }
